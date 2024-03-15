@@ -9,10 +9,10 @@
             </p>
            
             <p> <?=htmlspecialchars($note['body']) ?></p>
-
-            <form class="mt-6" method="post">
-                <button class="text-sm text-red-500">Delete</button>
-            </form> 
+            <footer class="mt-6">
+                <a href="/note/edit?id=<?=$note['id']?>" class=" text-gry-500 px-4 py-1 border border-current rounded ">Edit</a>
+            </footer>
+          
         </div>
     </main>
 <?php require  base_path('views/partials/footer.php')?>
